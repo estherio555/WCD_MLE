@@ -3,6 +3,7 @@ import pickle
 #from surprise import Dataset, Reader
 from datetime import datetime
 import boto3
+import numpy as np
 from io import BytesIO
 #from PIL import Image 
 import json
