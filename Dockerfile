@@ -6,7 +6,7 @@ FROM public.ecr.aws/lambda/python:3.9
 COPY requirements.txt ${LAMBDA_TASK_ROOT}
 RUN  python -m pip install --upgrade pip
 RUN  yum install gcc -y
-RUN  pip --no-cache-dir install numpy==1.19.2 scipy==1.2.1 scikit-learn==0.20.3
+RUN  pip --no-cache-dir install numpy==1.19.2 scikit-learn==0.20.3
 RUN  pip3 install -r requirements.txt --target "${LAMBDA_TASK_ROOT}"
 
 # Copy function code
